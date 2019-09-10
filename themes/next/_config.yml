@@ -104,7 +104,7 @@ social:
   #StackOverflow: https://stackoverflow.com/yourname || stack-overflow
   #YouTube: https://youtube.com/yourname || youtube
   #Instagram: https://instagram.com/yourname || instagram
-  #Skype: skype:yourname?call|chat || skype
+  #Skype: skype:fengxuanll?call|chat || skype
 
 social_icons:
   enable: true
@@ -352,6 +352,16 @@ valine:
   notify: false # mail notifier , https://github.com/xCss/Valine/wiki
   verify: false # Verification code
   placeholder: Comment input placeholder
+
+#gitalk settings
+gitalk:
+  enable: true #用来做启用判断
+  owner: fengxanll #Github 用户名,
+  repo: fengxuanll.github.io  #储存评论issue的github仓库名
+  admin: fengxanll #Github 用户名,
+  clientID: 8ab1351d53d831e1f2d1 #`Github Application clientID`
+  clientSecret: 0d780f4b1bac180d7a93a5f214d512ef553b8ba5 #`Github Application clientSecret`
+
 
 # Support for youyan comments system.
 # You can get your uid from http://www.uyan.cc

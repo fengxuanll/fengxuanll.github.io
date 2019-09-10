@@ -12,7 +12,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://zsean.com
+url: http://www.zyuxin.com
 root: /
 permalink: article/:title.html
 permalink_defaults:
@@ -80,3 +80,4 @@ deploy:
   type: git
   repository: https://github.com/fengxuanll/fengxuanll.github.io.git
   branch: master
+

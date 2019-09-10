@@ -30,6 +30,8 @@
       <div id="SOHUCS"></div>
     {% elseif theme.valine.appid and theme.valine.appkey %}
       <div id="vcomments"></div>
+    {% elseif theme.gitalk.enable %}
+      <div id="gitalk-container"></div>
     {% endif %}
   </div>
 {% endif %}
