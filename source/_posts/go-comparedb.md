@@ -1,8 +1,8 @@
 ---
 title: Golang - 比较主从数据
 date: 2017-09-30 23:56:09
-tags: Golang
-categories: Golang
+tags: go
+categories: go
 ---
 
 ### 说明
