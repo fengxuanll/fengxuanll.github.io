@@ -73,7 +73,7 @@
 <meta name="keywords" content="go,git">
 <meta property="og:type" content="article">
 <meta property="og:title" content="go语言推送文件到git">
-<meta property="og:url" content="http://zsean.com/article/push2git.html">
+<meta property="og:url" content="http://www.zyuxin.com/article/push2git.html">
 <meta property="og:site_name" content="枫轩‘博客">
 <meta property="og:description" content="这段时间在找一个比较好用的Markdown编辑器软件，然后找到了Tea、Typora这两个，但是Tea的文件不是直接存储在文件夹中的，是存储在数据库里头的，所以就考虑使用Typora了，而Typora又没有同步文件的功能，只能单机使用，所以这两天就自己用go写了个自动推送文件到git的小工具。">
 <meta property="og:locale" content="zh-Hans">
@@ -110,7 +110,7 @@
 
 
 
-  <link rel="canonical" href="http://zsean.com/article/push2git.html"/>
+  <link rel="canonical" href="http://www.zyuxin.com/article/push2git.html"/>
 
 
 
@@ -243,7 +243,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zsean.com/article/push2git.html">
+    <link itemprop="mainEntityOfPage" href="http://www.zyuxin.com/article/push2git.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="fengxuanll">
@@ -462,6 +462,8 @@
 
           
   <div class="comments" id="comments">
+    
+      <div id="gitalk-container"></div>
     
   </div>
 
@@ -743,6 +745,20 @@
 
 
 
+
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+   <script type="text/javascript">
+		var gitalk = new Gitalk({
+		  clientID: '8ab1351d53d831e1f2d1',
+		  clientSecret: '0d780f4b1bac180d7a93a5f214d512ef553b8ba5',
+		  repo: 'fengxuanll.github.io',
+		  owner: '',
+		  admin: ['fengxanll'], 
+		  id: location.pathnames
+		})
+		gitalk.render('gitalk-container')           
+       </script>
 
   
 

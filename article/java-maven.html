@@ -73,7 +73,7 @@
 <meta name="keywords" content="Java,Maven">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java从入门到放弃 - Maven篇">
-<meta property="og:url" content="http://zsean.com/article/java-maven.html">
+<meta property="og:url" content="http://www.zyuxin.com/article/java-maven.html">
 <meta property="og:site_name" content="枫轩‘博客">
 <meta property="og:description" content="Maven介绍Maven是Java的一个项目管理工具，类似于.NET中nuget，不过做.NET的一般是在Visul Studio里使用nuget，因为有可视化界面，而Maven一般是在xml文件里配置，当然nuget也可以手动配置，只是没有可视化界面操作那么的方便。这也是.NET开发和其他语言的开发比较大的区别，毕竟.NET有宇宙最强大的IDE。 在没有Maven之前，如果有依赖其它的包，需要下">
 <meta property="og:locale" content="zh-Hans">
@@ -110,7 +110,7 @@
 
 
 
-  <link rel="canonical" href="http://zsean.com/article/java-maven.html"/>
+  <link rel="canonical" href="http://www.zyuxin.com/article/java-maven.html"/>
 
 
 
@@ -243,7 +243,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zsean.com/article/java-maven.html">
+    <link itemprop="mainEntityOfPage" href="http://www.zyuxin.com/article/java-maven.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="fengxuanll">
@@ -464,6 +464,8 @@
 
           
   <div class="comments" id="comments">
+    
+      <div id="gitalk-container"></div>
     
   </div>
 
@@ -745,6 +747,20 @@
 
 
 
+
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+   <script type="text/javascript">
+		var gitalk = new Gitalk({
+		  clientID: '8ab1351d53d831e1f2d1',
+		  clientSecret: '0d780f4b1bac180d7a93a5f214d512ef553b8ba5',
+		  repo: 'fengxuanll.github.io',
+		  owner: '',
+		  admin: ['fengxanll'], 
+		  id: location.pathnames
+		})
+		gitalk.render('gitalk-container')           
+       </script>
 
   
 

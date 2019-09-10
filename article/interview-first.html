@@ -73,7 +73,7 @@
 <meta name="keywords" content="面试">
 <meta property="og:type" content="article">
 <meta property="og:title" content="第一次面试">
-<meta property="og:url" content="http://zsean.com/article/interview-first.html">
+<meta property="og:url" content="http://www.zyuxin.com/article/interview-first.html">
 <meta property="og:site_name" content="枫轩‘博客">
 <meta property="og:description" content="前面今天突然收到通知，要去面试下测试人员的数据库能力，刚收到通知的时候，比自己去面试工作的时候还紧张😓，还好冷静下来了。面试了两个人，感觉现在是不是IT行业太吃香了，好多人都在转IT，作为测试人员，连几个非常基础的SQL脚本都不会写，也就出来找工作了。作为中途转行的人来说，基础又不牢靠，而一般公司又是想招那种一进来就能快速上手的人，也难怪现在是找工作的人难，招人的也不好招了。">
 <meta property="og:locale" content="zh-Hans">
@@ -110,7 +110,7 @@
 
 
 
-  <link rel="canonical" href="http://zsean.com/article/interview-first.html"/>
+  <link rel="canonical" href="http://www.zyuxin.com/article/interview-first.html"/>
 
 
 
@@ -243,7 +243,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zsean.com/article/interview-first.html">
+    <link itemprop="mainEntityOfPage" href="http://www.zyuxin.com/article/interview-first.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="fengxuanll">
@@ -529,6 +529,8 @@
           
   <div class="comments" id="comments">
     
+      <div id="gitalk-container"></div>
+    
   </div>
 
 
@@ -809,6 +811,20 @@
 
 
 
+
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+   <script type="text/javascript">
+		var gitalk = new Gitalk({
+		  clientID: '8ab1351d53d831e1f2d1',
+		  clientSecret: '0d780f4b1bac180d7a93a5f214d512ef553b8ba5',
+		  repo: 'fengxuanll.github.io',
+		  owner: '',
+		  admin: ['fengxanll'], 
+		  id: location.pathnames
+		})
+		gitalk.render('gitalk-container')           
+       </script>
 
   
 

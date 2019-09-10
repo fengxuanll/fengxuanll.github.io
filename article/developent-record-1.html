@@ -73,7 +73,7 @@
 <meta name="keywords" content="开发记录,国庆事故">
 <meta property="og:type" content="article">
 <meta property="og:title" content="开发记录">
-<meta property="og:url" content="http://zsean.com/article/developent-record-1.html">
+<meta property="og:url" content="http://www.zyuxin.com/article/developent-record-1.html">
 <meta property="og:site_name" content="枫轩‘博客">
 <meta property="og:description" content="写在前面人啊，只要一懒散下来，一些坚持着的东西也就坚持不下去了，总会给自己找一些放弃的借口，比如这个博客，本来脑子都知道有几篇东西可以写的了，就是坐不下来。 国庆事故国庆期间我负责的东西就出了几次事故，其实如果在国庆前仔细点的话，都是可以避免的，今天记录下这两个发生事故的地方。假期出现状况就很尴尬啊，因为我是上不了服务器的，要麻烦几个同事才能处理问题。">
 <meta property="og:locale" content="zh-Hans">
@@ -110,7 +110,7 @@
 
 
 
-  <link rel="canonical" href="http://zsean.com/article/developent-record-1.html"/>
+  <link rel="canonical" href="http://www.zyuxin.com/article/developent-record-1.html"/>
 
 
 
@@ -243,7 +243,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zsean.com/article/developent-record-1.html">
+    <link itemprop="mainEntityOfPage" href="http://www.zyuxin.com/article/developent-record-1.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="fengxuanll">
@@ -440,6 +440,8 @@
 
           
   <div class="comments" id="comments">
+    
+      <div id="gitalk-container"></div>
     
   </div>
 
@@ -721,6 +723,20 @@
 
 
 
+
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+   <script type="text/javascript">
+		var gitalk = new Gitalk({
+		  clientID: '8ab1351d53d831e1f2d1',
+		  clientSecret: '0d780f4b1bac180d7a93a5f214d512ef553b8ba5',
+		  repo: 'fengxuanll.github.io',
+		  owner: '',
+		  admin: ['fengxanll'], 
+		  id: location.pathnames
+		})
+		gitalk.render('gitalk-container')           
+       </script>
 
   
 

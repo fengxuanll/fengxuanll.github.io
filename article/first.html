@@ -73,7 +73,7 @@
 <meta name="keywords" content="hexo,next">
 <meta property="og:type" content="article">
 <meta property="og:title" content="开篇">
-<meta property="og:url" content="http://zsean.com/article/first.html">
+<meta property="og:url" content="http://www.zyuxin.com/article/first.html">
 <meta property="og:site_name" content="枫轩‘博客">
 <meta property="og:description" content="开篇折腾了两个晚上，终于把hexo搭好了当然，这也是网络发达的好处，网上一搜索大把的教程就出来了，也说明了hexo的受欢迎程度最近又要学习Java了，在这个博客上记录点东西">
 <meta property="og:locale" content="zh-Hans">
@@ -110,7 +110,7 @@
 
 
 
-  <link rel="canonical" href="http://zsean.com/article/first.html"/>
+  <link rel="canonical" href="http://www.zyuxin.com/article/first.html"/>
 
 
 
@@ -243,7 +243,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zsean.com/article/first.html">
+    <link itemprop="mainEntityOfPage" href="http://www.zyuxin.com/article/first.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="fengxuanll">
@@ -468,6 +468,8 @@
 
           
   <div class="comments" id="comments">
+    
+      <div id="gitalk-container"></div>
     
   </div>
 
@@ -749,6 +751,20 @@
 
 
 
+
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+   <script type="text/javascript">
+		var gitalk = new Gitalk({
+		  clientID: '8ab1351d53d831e1f2d1',
+		  clientSecret: '0d780f4b1bac180d7a93a5f214d512ef553b8ba5',
+		  repo: 'fengxuanll.github.io',
+		  owner: '',
+		  admin: ['fengxanll'], 
+		  id: location.pathnames
+		})
+		gitalk.render('gitalk-container')           
+       </script>
 
   
 
