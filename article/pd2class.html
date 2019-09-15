@@ -6,10 +6,10 @@
 
 
 <html class="theme-next gemini use-motion" lang="zh-Hans">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="theme-color" content="#222">
 
 
@@ -20,8 +20,8 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
 
 
 
@@ -40,7 +40,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
 
 
 
@@ -48,21 +48,21 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
 
-<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="go,pdm," />
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css">
 
 
+  <meta name="keywords" content="go,pdm,">
 
 
 
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.png?v=5.1.2" />
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.png?v=5.1.2">
 
 
 
@@ -110,7 +110,7 @@
 
 
 
-  <link rel="canonical" href="http://www.zyuxin.com/article/pd2class.html"/>
+  <link rel="canonical" href="http://www.zyuxin.com/article/pd2class.html">
 
 
 
@@ -144,7 +144,7 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">枫轩‘博客</span>
         <span class="logo-line-after"><i></i></span>
@@ -174,7 +174,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
             
             首页
           </a>
@@ -184,7 +184,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
             
             标签
           </a>
@@ -194,7 +194,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
             
             分类
           </a>
@@ -204,7 +204,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
             归档
           </a>
@@ -247,7 +247,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="fengxuanll">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
@@ -283,7 +283,7 @@
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -342,7 +342,7 @@
 <a id="more"></a>
 <p>以下为本次学习到的小知识点：</p>
 <h3 id="解析xml"><a href="#解析xml" class="headerlink" title="解析xml"></a>解析xml</h3><p>因为xml里包含了很多层级的节点，而我需要的节点只是在里面的一部分，刚开始是准备用go自带的包去解析xml，但是找了一圈也没有找到需要的方法，然后再Github上发现了这个库：github.com/beevik/etree，还是挺好用的。</p>
-<figure class="highlight go"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">doc := etree.NewDocument()</div><div class="line">err := doc.ReadFromFile(path)	<span class="comment">// 从文件加载XML</span></div><div class="line"><span class="comment">// err := doc.ReadFromString("xml")  // 从字符串加载XML</span></div><div class="line"><span class="keyword">if</span> err != <span class="literal">nil</span> &#123;</div><div class="line">	<span class="keyword">return</span> <span class="literal">nil</span>, err</div><div class="line">&#125;</div><div class="line"></div><div class="line">tables := doc.FindElements(<span class="string">"Model/RootObject/Children/Model/Tables/Table"</span>)</div><div class="line"><span class="keyword">for</span> _, t := <span class="keyword">range</span> tables &#123;</div><div class="line">	<span class="keyword">var</span> commentNode = t.SelectElement(<span class="string">"Comment"</span>)</div><div class="line">	<span class="keyword">if</span> commentNode != <span class="literal">nil</span> &#123;</div><div class="line">        comment := commentNode.Text()</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">doc := etree.NewDocument()</span><br><span class="line">err := doc.ReadFromFile(path)	<span class="comment">// 从文件加载XML</span></span><br><span class="line"><span class="comment">// err := doc.ReadFromString("xml")  // 从字符串加载XML</span></span><br><span class="line"><span class="keyword">if</span> err != <span class="literal">nil</span> &#123;</span><br><span class="line">	<span class="keyword">return</span> <span class="literal">nil</span>, err</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">tables := doc.FindElements(<span class="string">"Model/RootObject/Children/Model/Tables/Table"</span>)</span><br><span class="line"><span class="keyword">for</span> _, t := <span class="keyword">range</span> tables &#123;</span><br><span class="line">	<span class="keyword">var</span> commentNode = t.SelectElement(<span class="string">"Comment"</span>)</span><br><span class="line">	<span class="keyword">if</span> commentNode != <span class="literal">nil</span> &#123;</span><br><span class="line">        comment := commentNode.Text()</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>这样就可以把所有的Table节点查找出来。</p>
 <ol>
 <li><p><code>FindElements</code> 是根据xpath直接查找的需要的节点，如果存在多个就会返回多个结果。</p>
@@ -353,11 +353,11 @@
 <h3 id="切片"><a href="#切片" class="headerlink" title="切片"></a>切片</h3><ol>
 <li><p>增加元素</p>
 <p>如果要在切片后增加元素，得使用系统函数<code>append()</code>，该函数会将从第一个参数开始的元素，添加到第一个参数的后面，并返回一个新的切片。使用方式如下：</p>
-<figure class="highlight go"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> tables []<span class="keyword">string</span></div><div class="line">tables = <span class="built_in">append</span>(tables, <span class="string">"test"</span>)</div></pre></td></tr></table></figure>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> tables []<span class="keyword">string</span></span><br><span class="line">tables = <span class="built_in">append</span>(tables, <span class="string">"test"</span>)</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>删除元素</p>
 <p>切片本身不提供直接删除元素的方法，只能先查找到元素在切片中的索引，然后再重新构造一个新的切片。</p>
-<figure class="highlight go"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</div><div class="line">	s := []<span class="keyword">string</span>&#123;<span class="string">"a"</span>, <span class="string">"a"</span>, <span class="string">"b"</span>, <span class="string">"c"</span>, <span class="string">"a"</span>&#125;</div><div class="line">	fmt.Println(s)  <span class="comment">// 输出：[a a b c a]</span></div><div class="line"></div><div class="line">	s = sliceRemove(s, <span class="string">"a"</span>)</div><div class="line">	fmt.Println(s)	<span class="comment">// 输出：[b c]</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// 删除切片中的指定元素</span></div><div class="line"><span class="function"><span class="keyword">func</span> <span class="title">sliceRemove</span><span class="params">(s []<span class="keyword">string</span>, item <span class="keyword">string</span>)</span> []<span class="title">string</span></span> &#123;</div><div class="line">	totalLength := <span class="built_in">len</span>(s) - <span class="number">1</span></div><div class="line">	<span class="keyword">for</span> i := totalLength; i &gt;= <span class="number">0</span>; i-- &#123;</div><div class="line">		<span class="keyword">if</span> s[i] == item &#123;</div><div class="line">			s = <span class="built_in">append</span>(s[:i], s[i+<span class="number">1</span>:]...)</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">return</span> s</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">	s := []<span class="keyword">string</span>&#123;<span class="string">"a"</span>, <span class="string">"a"</span>, <span class="string">"b"</span>, <span class="string">"c"</span>, <span class="string">"a"</span>&#125;</span><br><span class="line">	fmt.Println(s)  <span class="comment">// 输出：[a a b c a]</span></span><br><span class="line"></span><br><span class="line">	s = sliceRemove(s, <span class="string">"a"</span>)</span><br><span class="line">	fmt.Println(s)	<span class="comment">// 输出：[b c]</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 删除切片中的指定元素</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">sliceRemove</span><span class="params">(s []<span class="keyword">string</span>, item <span class="keyword">string</span>)</span> []<span class="title">string</span></span> &#123;</span><br><span class="line">	totalLength := <span class="built_in">len</span>(s) - <span class="number">1</span></span><br><span class="line">	<span class="keyword">for</span> i := totalLength; i &gt;= <span class="number">0</span>; i-- &#123;</span><br><span class="line">		<span class="keyword">if</span> s[i] == item &#123;</span><br><span class="line">			s = <span class="built_in">append</span>(s[:i], s[i+<span class="number">1</span>:]...)</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> s</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 <h3 id="模板"><a href="#模板" class="headerlink" title="模板"></a>模板</h3><p>模板用的是<code>text/template</code>包。</p>
@@ -367,9 +367,9 @@
 <li>模板中使用函数，go代码里调用正常的函数格式是：<code>funcName(arg1, arg2)</code>，在模板里就不能这么使用了，得<code>funcName arg1 arg2</code>，调用函数不需要括号，传的参数也不需要逗号隔开。</li>
 <li><code>Execute</code>是最终执行函数，第一个参数是<code>io.Writer</code>类型，可以输出到文件，也可以输出到控制台，第二个参数是传给模板的参数。</li>
 </ol>
-<figure class="highlight go"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">funcMap := template.FuncMap&#123;</div><div class="line">	<span class="string">"ProcessComment"</span>: ProcessComment,</div><div class="line">&#125;</div><div class="line"></div><div class="line">t, err := template.New(<span class="string">"class.tmpl"</span>).Funcs(funcMap).ParseFiles(<span class="string">"class.tmpl"</span>)</div><div class="line"><span class="keyword">if</span> err != <span class="literal">nil</span> &#123;</div><div class="line">	<span class="keyword">return</span> err</div><div class="line">&#125;</div><div class="line"></div><div class="line">fileName := table.Code + <span class="string">".cs"</span></div><div class="line">f, err := os.OpenFile(fileName, os.O_RDWR|os.O_CREATE|os.O_TRUNC, <span class="number">0644</span>)</div><div class="line"><span class="keyword">if</span> err != <span class="literal">nil</span> &#123;</div><div class="line">	<span class="keyword">return</span> err</div><div class="line">&#125;</div><div class="line"><span class="keyword">defer</span> f.Close()</div><div class="line"></div><div class="line">err = t.Execute(f, table)</div><div class="line"><span class="keyword">if</span> err != <span class="literal">nil</span> &#123;</div><div class="line">	<span class="keyword">return</span> err</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">funcMap := template.FuncMap&#123;</span><br><span class="line">	<span class="string">"ProcessComment"</span>: ProcessComment,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">t, err := template.New(<span class="string">"class.tmpl"</span>).Funcs(funcMap).ParseFiles(<span class="string">"class.tmpl"</span>)</span><br><span class="line"><span class="keyword">if</span> err != <span class="literal">nil</span> &#123;</span><br><span class="line">	<span class="keyword">return</span> err</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">fileName := table.Code + <span class="string">".cs"</span></span><br><span class="line">f, err := os.OpenFile(fileName, os.O_RDWR|os.O_CREATE|os.O_TRUNC, <span class="number">0644</span>)</span><br><span class="line"><span class="keyword">if</span> err != <span class="literal">nil</span> &#123;</span><br><span class="line">	<span class="keyword">return</span> err</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">defer</span> f.Close()</span><br><span class="line"></span><br><span class="line">err = t.Execute(f, table)</span><br><span class="line"><span class="keyword">if</span> err != <span class="literal">nil</span> &#123;</span><br><span class="line">	<span class="keyword">return</span> err</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="字典"><a href="#字典" class="headerlink" title="字典"></a>字典</h3><p>这段示例代码里是直接定义字典，也可以使用make函数来定义，语法为：<code>make(map[key-type]val-type</code>。</p>
-<figure class="highlight go"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 定义一个字典，并初始化了两个元素</span></div><div class="line">m := <span class="keyword">map</span>[<span class="keyword">string</span>]<span class="keyword">string</span>&#123;</div><div class="line">	<span class="string">"int"</span>:    <span class="string">"int"</span>,</div><div class="line">	<span class="string">"bigint"</span>: <span class="string">"long"</span>&#125;</div><div class="line">fmt.Println(m)	<span class="comment">// 结果：map[bigint:long int:int]</span></div><div class="line"></div><div class="line"><span class="comment">// 添加一个元素</span></div><div class="line">m[<span class="string">"varchar"</span>] = <span class="string">"string"</span></div><div class="line">fmt.Println(m)	<span class="comment">// 结果：map[bigint:long int:int varchar:string]</span></div><div class="line"></div><div class="line"><span class="comment">// 删除一个元素</span></div><div class="line"><span class="built_in">delete</span>(m, <span class="string">"int"</span>)</div><div class="line">fmt.Println(m)	<span class="comment">// 结果：map[bigint:long varchar:string]</span></div><div class="line"></div><div class="line"><span class="comment">// 尝试获取一个元素，如果不存在，ok会返回false</span></div><div class="line">_, ok := m[<span class="string">"int"</span>]</div><div class="line">fmt.Println(ok)	<span class="comment">// 结果：false</span></div><div class="line"></div><div class="line">item, ok := m[<span class="string">"varchar"</span>]</div><div class="line">fmt.Println(fmt.Sprintf(<span class="string">"%t: %s"</span>, ok, item))	<span class="comment">// 结果：true: string这是一种定义</span></div><div class="line">​</div></pre></td></tr></table></figure>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 定义一个字典，并初始化了两个元素</span></span><br><span class="line">m := <span class="keyword">map</span>[<span class="keyword">string</span>]<span class="keyword">string</span>&#123;</span><br><span class="line">	<span class="string">"int"</span>:    <span class="string">"int"</span>,</span><br><span class="line">	<span class="string">"bigint"</span>: <span class="string">"long"</span>&#125;</span><br><span class="line">fmt.Println(m)	<span class="comment">// 结果：map[bigint:long int:int]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 添加一个元素</span></span><br><span class="line">m[<span class="string">"varchar"</span>] = <span class="string">"string"</span></span><br><span class="line">fmt.Println(m)	<span class="comment">// 结果：map[bigint:long int:int varchar:string]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 删除一个元素</span></span><br><span class="line"><span class="built_in">delete</span>(m, <span class="string">"int"</span>)</span><br><span class="line">fmt.Println(m)	<span class="comment">// 结果：map[bigint:long varchar:string]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 尝试获取一个元素，如果不存在，ok会返回false</span></span><br><span class="line">_, ok := m[<span class="string">"int"</span>]</span><br><span class="line">fmt.Println(ok)	<span class="comment">// 结果：false</span></span><br><span class="line"></span><br><span class="line">item, ok := m[<span class="string">"varchar"</span>]</span><br><span class="line">fmt.Println(fmt.Sprintf(<span class="string">"%t: %s"</span>, ok, item))	<span class="comment">// 结果：true: string这是一种定义</span></span><br><span class="line">​</span><br></pre></td></tr></table></figure>
 <h3 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h3><ol>
 <li>最好是只在主方法里panic异常，其它方法只要判断异常并返回就行了，这样子貌似清晰一点。</li>
 <li>个人觉得go还是没有像C#那么成熟，很多语法糖层面的东西都没有提供，当然go本来就还比较年轻，或者也不想做那么多的语法糖。</li>
@@ -394,14 +394,14 @@
 
     
       <div id="wechat" style="display: inline-block">
-        <img id="wechat_qr" src="/images/weixinpay.png" alt="fengxuanll 微信支付"/>
+        <img id="wechat_qr" src="/images/weixinpay.png" alt="fengxuanll 微信支付">
         <p>微信支付</p>
       </div>
     
 
     
       <div id="alipay" style="display: inline-block">
-        <img id="alipay_qr" src="/images/alipay.png" alt="fengxuanll 支付宝"/>
+        <img id="alipay_qr" src="/images/alipay.png" alt="fengxuanll 支付宝">
         <p>支付宝</p>
       </div>
     
@@ -444,6 +444,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/article/protector.html" rel="prev" title="进程守护者">
+                进程守护者 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -496,7 +500,7 @@
 
       
         <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
             文章目录
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
@@ -541,7 +545,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-count">12</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -604,7 +608,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
+        <div class="copyright">
   
   &copy; 
   <span itemprop="copyrightYear">2019</span>

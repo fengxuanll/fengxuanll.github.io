@@ -6,10 +6,10 @@
 
 
 <html class="theme-next gemini use-motion" lang="zh-Hans">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="theme-color" content="#222">
 
 
@@ -20,8 +20,8 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
 
 
 
@@ -40,7 +40,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
 
 
 
@@ -48,21 +48,21 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
 
-<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="Java,Maven," />
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css">
 
 
+  <meta name="keywords" content="Java,Maven,">
 
 
 
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.png?v=5.1.2" />
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.png?v=5.1.2">
 
 
 
@@ -110,7 +110,7 @@
 
 
 
-  <link rel="canonical" href="http://www.zyuxin.com/article/java-maven.html"/>
+  <link rel="canonical" href="http://www.zyuxin.com/article/java-maven.html">
 
 
 
@@ -144,7 +144,7 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">枫轩‘博客</span>
         <span class="logo-line-after"><i></i></span>
@@ -174,7 +174,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
             
             首页
           </a>
@@ -184,7 +184,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
             
             标签
           </a>
@@ -194,7 +194,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
             
             分类
           </a>
@@ -204,7 +204,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
             归档
           </a>
@@ -247,7 +247,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="fengxuanll">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
@@ -283,7 +283,7 @@
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -338,27 +338,27 @@
 <h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><h4 id="第一步：当然是安装Maven"><a href="#第一步：当然是安装Maven" class="headerlink" title="第一步：当然是安装Maven"></a>第一步：当然是安装Maven</h4><h5 id="Mac"><a href="#Mac" class="headerlink" title="Mac"></a>Mac</h5><ol>
 <li>Mac下执行命令：brew install maven</li>
 <li>配置环境变量：vi ~/.bash_profile</li>
-<li>添加两行配置：<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">export M2_HOME=Maven目录</div><div class="line">export PATH=$PATH:$M2_HOME/bin</div></pre></td></tr></table></figure>
+<li>添加两行配置：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export M2_HOME=Maven目录</span><br><span class="line">export PATH=$PATH:$M2_HOME/bin</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 <h5 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h5><ol>
-<li>Windows下需要在<a href="http://maven.apache.org/download.cgi" target="_blank" rel="external">官网</a>下载Maven的包并解压。</li>
+<li>Windows下需要在<a href="http://maven.apache.org/download.cgi" target="_blank" rel="noopener">官网</a>下载Maven的包并解压。</li>
 <li>配置M2_HOME和MAVEN_HOME环境变量，路径都配置Maven解压后的目录。</li>
 <li>在PATH环境变量后，添加Maven的bin目录，使用 %M2_HOME%/bin 即可。</li>
 </ol>
 <p>安装完成后，执行 mvn –version 看看输出是否正常。</p>
-<h4 id="第二步：使用阿里云的共有仓库"><a href="#第二步：使用阿里云的共有仓库" class="headerlink" title="第二步：使用阿里云的共有仓库"></a>第二步：使用阿里云的共有仓库</h4><p>由于Maven的服务器是在国外，国内访问比较慢，阿里云提供了一个同步的Maven仓库镜像，基本就可以秒下jar包了。<br>修改.m2目录下的setting.xml文件，在mirrors节点下增加以下内容：<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">mirror</span>&gt;</span>  </div><div class="line">    <span class="tag">&lt;<span class="name">id</span>&gt;</span>nexus-aliyun<span class="tag">&lt;/<span class="name">id</span>&gt;</span>  </div><div class="line">    <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>central<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span>    </div><div class="line">    <span class="tag">&lt;<span class="name">name</span>&gt;</span>Nexus aliyun<span class="tag">&lt;/<span class="name">name</span>&gt;</span>  </div><div class="line">    <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public<span class="tag">&lt;/<span class="name">url</span>&gt;</span>  </div><div class="line"><span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<h4 id="第二步：使用阿里云的共有仓库"><a href="#第二步：使用阿里云的共有仓库" class="headerlink" title="第二步：使用阿里云的共有仓库"></a>第二步：使用阿里云的共有仓库</h4><p>由于Maven的服务器是在国外，国内访问比较慢，阿里云提供了一个同步的Maven仓库镜像，基本就可以秒下jar包了。<br>修改.m2目录下的setting.xml文件，在mirrors节点下增加以下内容：<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">mirror</span>&gt;</span>  </span><br><span class="line">    <span class="tag">&lt;<span class="name">id</span>&gt;</span>nexus-aliyun<span class="tag">&lt;/<span class="name">id</span>&gt;</span>  </span><br><span class="line">    <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>central<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span>    </span><br><span class="line">    <span class="tag">&lt;<span class="name">name</span>&gt;</span>Nexus aliyun<span class="tag">&lt;/<span class="name">name</span>&gt;</span>  </span><br><span class="line">    <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public<span class="tag">&lt;/<span class="name">url</span>&gt;</span>  </span><br><span class="line"><span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 <h3 id="Maven仓库"><a href="#Maven仓库" class="headerlink" title="Maven仓库"></a>Maven仓库</h3><p>Maven仓库分为本地仓库、远程仓库，Maven查找包时，会先搜索本地仓库，如果本地仓库没有，就会去搜索远程仓库。<br>远程仓库又分为：中央仓库、私服、其它公共库</p>
-<h4 id="本地仓库"><a href="#本地仓库" class="headerlink" title="本地仓库"></a>本地仓库</h4><p>顾名思义，本地仓库就是在自己电脑上的，当我们需要什么包时，会从远程仓库缓存到本地，然后第二次使用这个包时，就不用去下载新的了。<br>本地仓库存储在用户目录下的.m2/repository/文件夹下，这是Maven的默认路径，当然，也是可以修改的，修改.m2/repository、settings.xml文件里的localRepository节点，例如：<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">settings</span>&gt;</span>  </div><div class="line">    <span class="tag">&lt;<span class="name">localRepository</span>&gt;</span>D:\maven_new_repository<span class="tag">&lt;/<span class="name">localRepository</span>&gt;</span>  </div><div class="line"><span class="tag">&lt;/<span class="name">settings</span>&gt;</span></div></pre></td></tr></table></figure></p>
-<h4 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h4><h5 id="中央仓库"><a href="#中央仓库" class="headerlink" title="中央仓库"></a>中央仓库</h5><p>中央仓库是官方默认的远程仓库，Maven在安装时，自带的就是中央仓库的配置。<br>中央仓库中包含了绝大多数流行的开源Java构件，基本上你需要的都能在这里找得到，这也是Java生态繁荣的一个表现。<br>Maven中央仓库地址：<a href="http://mvnrepository.com/" target="_blank" rel="external">http://mvnrepository.com/</a>，如果需要什么包，可以直接去这上面找。</p>
-<h5 id="私服"><a href="#私服" class="headerlink" title="私服"></a>私服</h5><p>如果是团队开发项目，最好是能够自己搭建一个Maven私服仓库，我们一些自己内部的包就可以放到私服仓库里供团队使用，并且也可以从外部的远程仓库下载其它的包，缓存在私服中。<br>关于怎么搭建Nexus，可以参考这篇文章：<a href="http://blog.csdn.net/wang379275614/article/details/43940259" target="_blank" rel="external">Maven仓库—Nexus环境搭建及简单介绍</a></p>
+<h4 id="本地仓库"><a href="#本地仓库" class="headerlink" title="本地仓库"></a>本地仓库</h4><p>顾名思义，本地仓库就是在自己电脑上的，当我们需要什么包时，会从远程仓库缓存到本地，然后第二次使用这个包时，就不用去下载新的了。<br>本地仓库存储在用户目录下的.m2/repository/文件夹下，这是Maven的默认路径，当然，也是可以修改的，修改.m2/repository、settings.xml文件里的localRepository节点，例如：<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">settings</span>&gt;</span>  </span><br><span class="line">    <span class="tag">&lt;<span class="name">localRepository</span>&gt;</span>D:\maven_new_repository<span class="tag">&lt;/<span class="name">localRepository</span>&gt;</span>  </span><br><span class="line"><span class="tag">&lt;/<span class="name">settings</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h4><h5 id="中央仓库"><a href="#中央仓库" class="headerlink" title="中央仓库"></a>中央仓库</h5><p>中央仓库是官方默认的远程仓库，Maven在安装时，自带的就是中央仓库的配置。<br>中央仓库中包含了绝大多数流行的开源Java构件，基本上你需要的都能在这里找得到，这也是Java生态繁荣的一个表现。<br>Maven中央仓库地址：<a href="http://mvnrepository.com/" target="_blank" rel="noopener">http://mvnrepository.com/</a>，如果需要什么包，可以直接去这上面找。</p>
+<h5 id="私服"><a href="#私服" class="headerlink" title="私服"></a>私服</h5><p>如果是团队开发项目，最好是能够自己搭建一个Maven私服仓库，我们一些自己内部的包就可以放到私服仓库里供团队使用，并且也可以从外部的远程仓库下载其它的包，缓存在私服中。<br>关于怎么搭建Nexus，可以参考这篇文章：<a href="http://blog.csdn.net/wang379275614/article/details/43940259" target="_blank" rel="noopener">Maven仓库—Nexus环境搭建及简单介绍</a></p>
 <h5 id="其它共同库"><a href="#其它共同库" class="headerlink" title="其它共同库"></a>其它共同库</h5><p>前面配置的阿里云的Maven镜像，就属于这一类，它基本上是同步了中央仓库的内容。</p>
-<h3 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h3><h4 id="POM文件"><a href="#POM文件" class="headerlink" title="POM文件"></a>POM文件</h4><p>POM是Maven项目的配置文件，包含了各种配置信息，每个项目只能有一个POM文件，是一个xml文件，文件名为：POM.xml。<br>一个基本的POM文件内容为：<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">"http://maven.apache.org/POM/4.0.0"</span></span></div><div class="line"><span class="tag">   <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></div><div class="line"><span class="tag">   <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://maven.apache.org/POM/4.0.0</span></span></div><div class="line"><span class="tag"><span class="string">   http://maven.apache.org/xsd/maven-4.0.0.xsd"</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">modelVersion</span>&gt;</span>4.0.0<span class="tag">&lt;/<span class="name">modelVersion</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.zsean.project-group<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>project<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0<span class="tag">&lt;/<span class="name">version</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">project</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<h3 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h3><h4 id="POM文件"><a href="#POM文件" class="headerlink" title="POM文件"></a>POM文件</h4><p>POM是Maven项目的配置文件，包含了各种配置信息，每个项目只能有一个POM文件，是一个xml文件，文件名为：POM.xml。<br>一个基本的POM文件内容为：<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">"http://maven.apache.org/POM/4.0.0"</span></span></span><br><span class="line"><span class="tag">   <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></span><br><span class="line"><span class="tag">   <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://maven.apache.org/POM/4.0.0</span></span></span><br><span class="line"><span class="tag"><span class="string">   http://maven.apache.org/xsd/maven-4.0.0.xsd"</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">modelVersion</span>&gt;</span>4.0.0<span class="tag">&lt;/<span class="name">modelVersion</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.zsean.project-group<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>project<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 <p>因为每个Maven项目都会生成一个jar包，这些配置就是对当前项目的一些Maven定义</p>
 <h5 id="Super-POM"><a href="#Super-POM" class="headerlink" title="Super POM"></a>Super POM</h5><p>所有的POM都继承自一个父POM，无论是否有显示定义，父POM也叫做Super POM，他包含了一些可以被继承的默认设置。</p>
-<h5 id="POM外部依赖"><a href="#POM外部依赖" class="headerlink" title="POM外部依赖"></a>POM外部依赖</h5><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">dependency</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">groupId</span>&gt;</span>junit<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>junit<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">version</span>&gt;</span>3.8.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></div></pre></td></tr></table></figure>
+<h5 id="POM外部依赖"><a href="#POM外部依赖" class="headerlink" title="POM外部依赖"></a>POM外部依赖</h5><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">groupId</span>&gt;</span>junit<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>junit<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">version</span>&gt;</span>3.8.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>这里是引用了junit的依赖，当保存后，Maven就会自动从中央仓库下载3.8.1版本的junit包到本地仓库，并引用到当前项目，然后就可以使用junit了。</p>
-<h5 id="POM插件"><a href="#POM插件" class="headerlink" title="POM插件"></a>POM插件</h5><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">plugins</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">plugin</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-antrun-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">version</span>&gt;</span>1.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></div></pre></td></tr></table></figure>
+<h5 id="POM插件"><a href="#POM插件" class="headerlink" title="POM插件"></a>POM插件</h5><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">plugins</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-antrun-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">version</span>&gt;</span>1.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <h3 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h3><p>写着写着就写不下去了，越写越觉得自己没弄清楚的地方太多了，这篇是还没写完的，等自己再多了解下再回来写吧……</p>
 <p>关于Maven要学习的地方还很多，比如命令行工具…，现在还只是学习到了一点点皮毛的东西。</p>
 <p>从.NET转Java估计最大的不习惯就是各种配置都需要手动去改，不像.NET都是各种图形化界面，慢慢习惯、学习吧，😓</p>
@@ -382,14 +382,14 @@
 
     
       <div id="wechat" style="display: inline-block">
-        <img id="wechat_qr" src="/images/weixinpay.png" alt="fengxuanll 微信支付"/>
+        <img id="wechat_qr" src="/images/weixinpay.png" alt="fengxuanll 微信支付">
         <p>微信支付</p>
       </div>
     
 
     
       <div id="alipay" style="display: inline-block">
-        <img id="alipay_qr" src="/images/alipay.png" alt="fengxuanll 支付宝"/>
+        <img id="alipay_qr" src="/images/alipay.png" alt="fengxuanll 支付宝">
         <p>支付宝</p>
       </div>
     
@@ -433,8 +433,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/article/java-springmvc.html" rel="prev" title="Java从入门到放弃 - Spring MVC篇">
-                Java从入门到放弃 - Spring MVC篇 <i class="fa fa-chevron-right"></i>
+              <a href="/article/go-comparedb.html" rel="prev" title="Golang - 比较主从数据">
+                Golang - 比较主从数据 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -488,7 +488,7 @@
 
       
         <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
             文章目录
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
@@ -533,7 +533,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-count">12</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -596,7 +596,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
+        <div class="copyright">
   
   &copy; 
   <span itemprop="copyrightYear">2019</span>

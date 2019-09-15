@@ -6,10 +6,10 @@
 
 
 <html class="theme-next gemini use-motion" lang="zh-Hans">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="theme-color" content="#222">
 
 
@@ -20,8 +20,8 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
 
 
 
@@ -40,7 +40,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
 
 
 
@@ -48,39 +48,39 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
 
-<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="Java,Spring mvc," />
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css">
 
 
+  <meta name="keywords" content="go,">
 
 
 
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.png?v=5.1.2" />
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.png?v=5.1.2">
 
 
 
 
 
 
-<meta name="description" content="fengxuanll">
-<meta name="keywords" content="Java,Spring mvc">
+<meta name="description" content="公司里有一个监控Windows服务、IIS应用程序池的程序，这次把它尝试用go重写了一次。 需求： 读取配置文件中的Windows服务、IIS应用程序池。 定时去检测是否运行正常 将非启动状态的服务、应用程序池启动">
+<meta name="keywords" content="go">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Java从入门到放弃 - Spring MVC篇">
-<meta property="og:url" content="http://www.zyuxin.com/article/java-springmvc.html">
+<meta property="og:title" content="进程守护者">
+<meta property="og:url" content="http://www.zyuxin.com/article/protector.html">
 <meta property="og:site_name" content="枫轩‘博客">
-<meta property="og:description" content="fengxuanll">
+<meta property="og:description" content="公司里有一个监控Windows服务、IIS应用程序池的程序，这次把它尝试用go重写了一次。 需求： 读取配置文件中的Windows服务、IIS应用程序池。 定时去检测是否运行正常 将非启动状态的服务、应用程序池启动">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-10T13:53:48.509Z">
+<meta property="og:updated_time" content="2019-09-15T08:26:43.263Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Java从入门到放弃 - Spring MVC篇">
-<meta name="twitter:description" content="fengxuanll">
+<meta name="twitter:title" content="进程守护者">
+<meta name="twitter:description" content="公司里有一个监控Windows服务、IIS应用程序池的程序，这次把它尝试用go重写了一次。 需求： 读取配置文件中的Windows服务、IIS应用程序池。 定时去检测是否运行正常 将非启动状态的服务、应用程序池启动">
 
 
 
@@ -110,13 +110,13 @@
 
 
 
-  <link rel="canonical" href="http://www.zyuxin.com/article/java-springmvc.html"/>
+  <link rel="canonical" href="http://www.zyuxin.com/article/protector.html">
 
 
 
 
 
-  <title>Java从入门到放弃 - Spring MVC篇 | 枫轩‘博客</title>
+  <title>进程守护者 | 枫轩‘博客</title>
   
 
 
@@ -144,7 +144,7 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">枫轩‘博客</span>
         <span class="logo-line-after"><i></i></span>
@@ -174,7 +174,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
             
             首页
           </a>
@@ -184,7 +184,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
             
             标签
           </a>
@@ -194,7 +194,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
             
             分类
           </a>
@@ -204,7 +204,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
             归档
           </a>
@@ -243,11 +243,11 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.zyuxin.com/article/java-springmvc.html">
+    <link itemprop="mainEntityOfPage" href="http://www.zyuxin.com/article/protector.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="fengxuanll">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
@@ -260,7 +260,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Java从入门到放弃 - Spring MVC篇</h1>
+          <h1 class="post-title" itemprop="name headline">进程守护者</h1>
         
 
         <div class="post-meta">
@@ -272,8 +272,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-24T11:58:39+08:00">
-                2017-09-24
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-15T16:25:42+08:00">
+                2019-09-15
               </time>
             
 
@@ -283,7 +283,7 @@
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -295,8 +295,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java从入门到放弃/" itemprop="url" rel="index">
-                    <span itemprop="name">Java从入门到放弃</span>
+                  <a href="/categories/go/" itemprop="url" rel="index">
+                    <span itemprop="name">go</span>
                   </a>
                 </span>
 
@@ -332,7 +332,48 @@
       
 
       
-        
+        <p>公司里有一个监控Windows服务、IIS应用程序池的程序，这次把它尝试用go重写了一次。</p>
+<h3 id="需求："><a href="#需求：" class="headerlink" title="需求："></a>需求：</h3><ol>
+<li>读取配置文件中的Windows服务、IIS应用程序池。</li>
+<li>定时去检测是否运行正常</li>
+<li>将非启动状态的服务、应用程序池启动</li>
+</ol>
+<a id="more"></a>
+<h3 id="以下为本次学习到的新内容"><a href="#以下为本次学习到的新内容" class="headerlink" title="以下为本次学习到的新内容"></a>以下为本次学习到的新内容</h3><ol>
+<li><p>自定义package</p>
+<p>先执行<code>go build</code>，再执行<code>go install</code>，这样才能在其它包中使用。</p>
+</li>
+<li><p>Windows服务</p>
+<p>go没有直接操作Windows服务的相关api，所以只能通过Windows自带的工具去处理，在命令行输入相关内容，再解析输出结果。</p>
+<ol>
+<li><p>查看：<code>cs query state=all</code>，该语句会输出所有的Windows服务信息。</p>
+<p>这里有个地方得注意下，在go程序里执行没问题，在cmd里执行该语句也是正常的，但是在PowerShell里执行的话，会在执行命令的目录下生成一个文件名为：<code>query</code>的文件，文件内容是<code>state=all</code>。</p>
+<p>PowerShell里跟Windows服务相关的命令是：<code>Get-Service</code>，具体参数目前还没有去了解。</p>
+</li>
+<li><p>启动：<code>cs start &quot;服务名称&quot;</code>，该语句会启动指定的Windows服务。</p>
+</li>
+</ol>
+</li>
+<li><p>IIS 应用程序池</p>
+<p>IIS 7以后新增了<code>appcmd.exe</code>工具，路径为<code>C:\Windows\System32\inetsrv\appcmd.exe</code>，使用该工具可以查看、操作应用程序池。在go里的实现也是先执行相关命令，再解析输出结果。</p>
+<ol>
+<li>查看：<code>appcmd list apppool</code>，该语句会输出所有的IIS应用程序池。</li>
+<li>启动：<code>appcmd start apppool &quot;程序池名称&quot;</code>，该语句会启动指定的IIS应用程序池。</li>
+</ol>
+</li>
+<li><p>go函数不支持默认参数</p>
+<p>C#中有许多的语法糖，让我们使用起来非常方便，而go里就没这么完美了，像函数的默认参数就不支持，而且还不支持函数重载。当然这样也有好处，使用起来直观一些。这也看出来go还确实是简洁了一些，很多东西都要自己去实现。</p>
+</li>
+<li><p>命令行乱码</p>
+<p>因为go的文件编码是 UTF-8，而cmd的活动页是cp936（GBK），因此在中文Windows系统中，如果一个文本文件是UTF-8编码的，那么在cmd.exe命令行窗口中会有存在不能正常显示输出内容的情况。</p>
+<p>解决办法：在命令行中运行<code>chcp</code>查看活动页代码，默认应该会输出<code>936</code>，然后直接运行<code>chcp 65001</code>即可，这样就能正常显示中文了。</p>
+</li>
+<li><p>go单元测试</p>
+<p>同目录下新建一个同名的<code>*_test.go</code>文件，定义函数名必须以<code>Test</code>开头，一般来讲，要测试哪个函数，后面就紧跟要测试的函数名。当运行测试函数没报错时，即单元测试通过。</p>
+</li>
+</ol>
+<h3 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h3><p>其实这里还有很多的东西都没有写清楚，也只是这次用到了，也就顺便提一下，如果要写得很完善的话，每一个点估计都能写一篇很长很长的文章了。因为个人的语言组织能力有限，并且对这些新知识点的理解也算不上透彻，所以先只在这里记录一下，等以后用得多了，理解也就深了，然后再来完善这些点吧。</p>
+
       
     </div>
     
@@ -352,14 +393,14 @@
 
     
       <div id="wechat" style="display: inline-block">
-        <img id="wechat_qr" src="/images/weixinpay.png" alt="fengxuanll 微信支付"/>
+        <img id="wechat_qr" src="/images/weixinpay.png" alt="fengxuanll 微信支付">
         <p>微信支付</p>
       </div>
     
 
     
       <div id="alipay" style="display: inline-block">
-        <img id="alipay_qr" src="/images/alipay.png" alt="fengxuanll 支付宝"/>
+        <img id="alipay_qr" src="/images/alipay.png" alt="fengxuanll 支付宝">
         <p>支付宝</p>
       </div>
     
@@ -378,9 +419,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Java/" rel="tag"># Java</a>
-          
-            <a href="/tags/Spring-mvc/" rel="tag"># Spring mvc</a>
+            <a href="/tags/go/" rel="tag"># go</a>
           
         </div>
       
@@ -393,8 +432,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/article/java-maven.html" rel="next" title="Java从入门到放弃 - Maven篇">
-                <i class="fa fa-chevron-left"></i> Java从入门到放弃 - Maven篇
+              <a href="/article/pd2class.html" rel="next" title="解析PowerDesigner文件生成C#实体类">
+                <i class="fa fa-chevron-left"></i> 解析PowerDesigner文件生成C#实体类
               </a>
             
           </div>
@@ -402,10 +441,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/article/go-comparedb.html" rel="prev" title="Golang - 比较主从数据">
-                Golang - 比较主从数据 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -457,8 +492,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           
             <p class="site-author-name" itemprop="name">fengxuanll</p>
@@ -494,7 +538,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-count">12</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -528,6 +572,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#需求："><span class="nav-number">1.</span> <span class="nav-text">需求：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#以下为本次学习到的新内容"><span class="nav-number">2.</span> <span class="nav-text">以下为本次学习到的新内容</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#最后"><span class="nav-number">3.</span> <span class="nav-text">最后</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -541,7 +601,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
+        <div class="copyright">
   
   &copy; 
   <span itemprop="copyrightYear">2019</span>

@@ -6,10 +6,10 @@
 
 
 <html class="theme-next gemini use-motion" lang="zh-Hans">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="theme-color" content="#222">
 
 
@@ -20,8 +20,8 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
 
 
 
@@ -40,7 +40,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
 
 
 
@@ -48,21 +48,21 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
 
-<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="go," />
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css">
 
 
+  <meta name="keywords" content="go,">
 
 
 
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.png?v=5.1.2" />
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.png?v=5.1.2">
 
 
 
@@ -110,7 +110,7 @@
 
 
 
-  <link rel="canonical" href="http://www.zyuxin.com/article/go-comparedb.html"/>
+  <link rel="canonical" href="http://www.zyuxin.com/article/go-comparedb.html">
 
 
 
@@ -144,7 +144,7 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">枫轩‘博客</span>
         <span class="logo-line-after"><i></i></span>
@@ -174,7 +174,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
             
             首页
           </a>
@@ -184,7 +184,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
             
             标签
           </a>
@@ -194,7 +194,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
             
             分类
           </a>
@@ -204,7 +204,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
             归档
           </a>
@@ -247,7 +247,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="fengxuanll">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
@@ -283,7 +283,7 @@
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -337,7 +337,7 @@
 <p>后面已经找到了同步失败的原因，是因为发布的时候，有张表同时存在于了两个发布里，导致总是同步出问题。</p>
 </blockquote>
 <a id="more"></a>
-<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight go"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> main</div><div class="line"></div><div class="line"><span class="keyword">import</span> (</div><div class="line">	<span class="string">"database/sql"</span></div><div class="line">	<span class="string">"fmt"</span></div><div class="line">	<span class="string">"strings"</span></div><div class="line"></div><div class="line">	_ <span class="string">"github.com/denisenkom/go-mssqldb"</span></div><div class="line">)</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</div><div class="line">	<span class="keyword">var</span> tableList = <span class="keyword">map</span>[<span class="keyword">string</span>]<span class="keyword">map</span>[<span class="keyword">string</span>][]<span class="keyword">string</span>&#123;</div><div class="line">		<span class="string">"ListingPrd"</span>: &#123;</div><div class="line">			<span class="string">"dbo"</span>: []<span class="keyword">string</span>&#123;<span class="string">"SimpleListingSetting"</span>&#125;,</div><div class="line">		&#125;,</div><div class="line">		<span class="string">"OMSPrd"</span>: &#123;</div><div class="line">			<span class="string">"dbo"</span>:     []<span class="keyword">string</span>&#123;<span class="string">"Customer"</span>, <span class="string">"ShipmentOrder"</span>&#125;,</div><div class="line">			<span class="string">"Sales"</span>:   []<span class="keyword">string</span>&#123;<span class="string">"OptionalOrderTransaction"</span>, <span class="string">"Order"</span>&#125;,</div><div class="line">			<span class="string">"Setting"</span>: []<span class="keyword">string</span>&#123;<span class="string">"PlatformSite"</span>, <span class="string">"Store"</span>&#125;,</div><div class="line">		&#125;,</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="keyword">for</span> dbName, dbItem := <span class="keyword">range</span> tableList &#123;</div><div class="line">		<span class="keyword">for</span> ownerName, ownerItem := <span class="keyword">range</span> dbItem &#123;</div><div class="line">			<span class="keyword">for</span> _, tableName := <span class="keyword">range</span> ownerItem &#123;</div><div class="line">				<span class="keyword">var</span> itemName = strings.Join([]<span class="keyword">string</span>&#123;dbName, <span class="string">"."</span>, ownerName, <span class="string">".["</span>, tableName, <span class="string">"]"</span>&#125;, <span class="string">""</span>)</div><div class="line">				isEqual, err := compareRows(itemName)</div><div class="line">				<span class="keyword">if</span> err != <span class="literal">nil</span> &#123;</div><div class="line">					<span class="keyword">break</span></div><div class="line">				&#125;</div><div class="line">				<span class="keyword">var</span> result = <span class="string">"正常"</span></div><div class="line">				<span class="keyword">if</span> isEqual != <span class="literal">true</span> &#123;</div><div class="line">					result = <span class="string">"错误"</span></div><div class="line">				&#125;</div><div class="line">				fmt.Println(strings.Join([]<span class="keyword">string</span>&#123;itemName, <span class="string">"："</span>, result&#125;, <span class="string">""</span>))</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">func</span> <span class="title">compareRows</span><span class="params">(itemName <span class="keyword">string</span>)</span> <span class="params">(<span class="keyword">bool</span>, error)</span></span> &#123;</div><div class="line">	<span class="keyword">var</span> mainDbConnectionString = <span class="string">"server=*;port=*;database=*;user id=*;password=*;"</span></div><div class="line">	<span class="keyword">var</span> subDBConnectionString = <span class="string">"server=*;port=*;database=*;user id=*;password=*;"</span></div><div class="line">	<span class="keyword">var</span> sqlText = strings.Join([]<span class="keyword">string</span>&#123;<span class="string">"SELECT COUNT(1) AS Qty FROM "</span>, itemName, <span class="string">" WITH(NOLOCK)"</span>&#125;, <span class="string">""</span>)</div><div class="line">	mainQty, err := queryDb(mainDbConnectionString, sqlText)</div><div class="line">	<span class="keyword">if</span> err != <span class="literal">nil</span> &#123;</div><div class="line">		fmt.Println(strings.Join([]<span class="keyword">string</span>&#123;itemName, <span class="string">" 主库查询失败："</span>&#125;, <span class="string">""</span>), err)</div><div class="line">		<span class="keyword">return</span> <span class="literal">false</span>, err</div><div class="line">	&#125;</div><div class="line">	subQty, err := queryDb(subDBConnectionString, sqlText)</div><div class="line">	<span class="keyword">if</span> err != <span class="literal">nil</span> &#123;</div><div class="line">		fmt.Println(strings.Join([]<span class="keyword">string</span>&#123;itemName, <span class="string">" 从库查询失败："</span>&#125;, <span class="string">""</span>), err)</div><div class="line">		<span class="keyword">return</span> <span class="literal">false</span>, err</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="keyword">return</span> mainQty == subQty, <span class="literal">nil</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">func</span> <span class="title">queryDb</span><span class="params">(connectionString <span class="keyword">string</span>, sqlText <span class="keyword">string</span>)</span> <span class="params">(<span class="keyword">int</span>, error)</span></span> &#123;</div><div class="line">	conn, err := sql.Open(<span class="string">"sqlserver"</span>, connectionString)</div><div class="line">	<span class="keyword">defer</span> conn.Close()</div><div class="line"></div><div class="line">	<span class="keyword">var</span> qty <span class="keyword">int</span></div><div class="line">	err = conn.QueryRow(sqlText).Scan(&amp;qty)</div><div class="line"></div><div class="line">	<span class="keyword">return</span> qty, err</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">	<span class="string">"database/sql"</span></span><br><span class="line">	<span class="string">"fmt"</span></span><br><span class="line">	<span class="string">"strings"</span></span><br><span class="line"></span><br><span class="line">	_ <span class="string">"github.com/denisenkom/go-mssqldb"</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">	<span class="keyword">var</span> tableList = <span class="keyword">map</span>[<span class="keyword">string</span>]<span class="keyword">map</span>[<span class="keyword">string</span>][]<span class="keyword">string</span>&#123;</span><br><span class="line">		<span class="string">"ListingPrd"</span>: &#123;</span><br><span class="line">			<span class="string">"dbo"</span>: []<span class="keyword">string</span>&#123;<span class="string">"SimpleListingSetting"</span>&#125;,</span><br><span class="line">		&#125;,</span><br><span class="line">		<span class="string">"OMSPrd"</span>: &#123;</span><br><span class="line">			<span class="string">"dbo"</span>:     []<span class="keyword">string</span>&#123;<span class="string">"Customer"</span>, <span class="string">"ShipmentOrder"</span>&#125;,</span><br><span class="line">			<span class="string">"Sales"</span>:   []<span class="keyword">string</span>&#123;<span class="string">"OptionalOrderTransaction"</span>, <span class="string">"Order"</span>&#125;,</span><br><span class="line">			<span class="string">"Setting"</span>: []<span class="keyword">string</span>&#123;<span class="string">"PlatformSite"</span>, <span class="string">"Store"</span>&#125;,</span><br><span class="line">		&#125;,</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">for</span> dbName, dbItem := <span class="keyword">range</span> tableList &#123;</span><br><span class="line">		<span class="keyword">for</span> ownerName, ownerItem := <span class="keyword">range</span> dbItem &#123;</span><br><span class="line">			<span class="keyword">for</span> _, tableName := <span class="keyword">range</span> ownerItem &#123;</span><br><span class="line">				<span class="keyword">var</span> itemName = strings.Join([]<span class="keyword">string</span>&#123;dbName, <span class="string">"."</span>, ownerName, <span class="string">".["</span>, tableName, <span class="string">"]"</span>&#125;, <span class="string">""</span>)</span><br><span class="line">				isEqual, err := compareRows(itemName)</span><br><span class="line">				<span class="keyword">if</span> err != <span class="literal">nil</span> &#123;</span><br><span class="line">					<span class="keyword">break</span></span><br><span class="line">				&#125;</span><br><span class="line">				<span class="keyword">var</span> result = <span class="string">"正常"</span></span><br><span class="line">				<span class="keyword">if</span> isEqual != <span class="literal">true</span> &#123;</span><br><span class="line">					result = <span class="string">"错误"</span></span><br><span class="line">				&#125;</span><br><span class="line">				fmt.Println(strings.Join([]<span class="keyword">string</span>&#123;itemName, <span class="string">"："</span>, result&#125;, <span class="string">""</span>))</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">compareRows</span><span class="params">(itemName <span class="keyword">string</span>)</span> <span class="params">(<span class="keyword">bool</span>, error)</span></span> &#123;</span><br><span class="line">	<span class="keyword">var</span> mainDbConnectionString = <span class="string">"server=*;port=*;database=*;user id=*;password=*;"</span></span><br><span class="line">	<span class="keyword">var</span> subDBConnectionString = <span class="string">"server=*;port=*;database=*;user id=*;password=*;"</span></span><br><span class="line">	<span class="keyword">var</span> sqlText = strings.Join([]<span class="keyword">string</span>&#123;<span class="string">"SELECT COUNT(1) AS Qty FROM "</span>, itemName, <span class="string">" WITH(NOLOCK)"</span>&#125;, <span class="string">""</span>)</span><br><span class="line">	mainQty, err := queryDb(mainDbConnectionString, sqlText)</span><br><span class="line">	<span class="keyword">if</span> err != <span class="literal">nil</span> &#123;</span><br><span class="line">		fmt.Println(strings.Join([]<span class="keyword">string</span>&#123;itemName, <span class="string">" 主库查询失败："</span>&#125;, <span class="string">""</span>), err)</span><br><span class="line">		<span class="keyword">return</span> <span class="literal">false</span>, err</span><br><span class="line">	&#125;</span><br><span class="line">	subQty, err := queryDb(subDBConnectionString, sqlText)</span><br><span class="line">	<span class="keyword">if</span> err != <span class="literal">nil</span> &#123;</span><br><span class="line">		fmt.Println(strings.Join([]<span class="keyword">string</span>&#123;itemName, <span class="string">" 从库查询失败："</span>&#125;, <span class="string">""</span>), err)</span><br><span class="line">		<span class="keyword">return</span> <span class="literal">false</span>, err</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> mainQty == subQty, <span class="literal">nil</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">queryDb</span><span class="params">(connectionString <span class="keyword">string</span>, sqlText <span class="keyword">string</span>)</span> <span class="params">(<span class="keyword">int</span>, error)</span></span> &#123;</span><br><span class="line">	conn, err := sql.Open(<span class="string">"sqlserver"</span>, connectionString)</span><br><span class="line">	<span class="keyword">defer</span> conn.Close()</span><br><span class="line"></span><br><span class="line">	<span class="keyword">var</span> qty <span class="keyword">int</span></span><br><span class="line">	err = conn.QueryRow(sqlText).Scan(&amp;qty)</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> qty, err</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -358,14 +358,14 @@
 
     
       <div id="wechat" style="display: inline-block">
-        <img id="wechat_qr" src="/images/weixinpay.png" alt="fengxuanll 微信支付"/>
+        <img id="wechat_qr" src="/images/weixinpay.png" alt="fengxuanll 微信支付">
         <p>微信支付</p>
       </div>
     
 
     
       <div id="alipay" style="display: inline-block">
-        <img id="alipay_qr" src="/images/alipay.png" alt="fengxuanll 支付宝"/>
+        <img id="alipay_qr" src="/images/alipay.png" alt="fengxuanll 支付宝">
         <p>支付宝</p>
       </div>
     
@@ -397,8 +397,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/article/java-springmvc.html" rel="next" title="Java从入门到放弃 - Spring MVC篇">
-                <i class="fa fa-chevron-left"></i> Java从入门到放弃 - Spring MVC篇
+              <a href="/article/java-maven.html" rel="next" title="Java从入门到放弃 - Maven篇">
+                <i class="fa fa-chevron-left"></i> Java从入门到放弃 - Maven篇
               </a>
             
           </div>
@@ -462,7 +462,7 @@
 
       
         <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
             文章目录
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
@@ -507,7 +507,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-count">12</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -570,7 +570,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
+        <div class="copyright">
   
   &copy; 
   <span itemprop="copyrightYear">2019</span>
