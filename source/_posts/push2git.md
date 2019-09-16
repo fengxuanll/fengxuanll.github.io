@@ -1,10 +1,12 @@
 ---
 title: go语言推送文件到git
+tags:
+  - go
+  - git
+categories:
+  - go
+toc: false
 date: 2019-09-08 22:04:35
-tags: 
-    - git
-    - go
-categories: go
 ---
 
 这段时间在找一个比较好用的Markdown编辑器软件，然后找到了Tea、Typora这两个，但是Tea的文件不是直接存储在文件夹中的，是存储在数据库里头的，所以就考虑使用Typora了，而Typora又没有同步文件的功能，只能单机使用，所以这两天就自己用go写了个自动推送文件到git的小工具。
@@ -25,14 +27,16 @@ categories: go
 
     ```go
     cmd := exec.Command(path, args...)	// 实例化一个执行程序，指定执行程序路径和参数
-    cmd.Dir = ""	// Mac中执行的时候，默认目录是当前电脑登录用户的目录，所以需要执行执行文件夹
+    cmd.Dir = ""	// 指定执行目录
     output, err := cmd.CombinedOutput()	// 执行程序，并返回程序的输出内容
     result := string(output)	// 将输出内容转换为字符串
     ```
 
     cmd里还有一些其它的方法是执行命令的，CombinedOutput是要等一个命令执行完成后，才会返回执行结果。Run是直接执行，不返回执行结果，CombinedOutput其实内部也是调用的Run方法，只是加了异常的处理。
 
-    在Mac中如果直接执行go语言编译后的执行文件，默认路径会在当前登录用户的文件夹下，所以执行本程序的时候，会提示当前目录不是git仓库，所以需要指定cmd的Dir
+    在Mac中如果直接执行go语言编译后的执行文件，默认路径会在当前登录用户的文件夹下，所以执行本程序的时候，会提示当前目录不是git仓库，所以需要指定cmd的Dir。
+    
+    这里需要注意下，目前碰到有Windows下部分命令不能直接运行，会提示：`exec: "appcmd.exe": executable file not found in %PATH%`，解决这种情况需要使用`cmd`命令来执行，比如，本来要执行的是：`appcmd list apppool`，改成执行：`cmd /C appcmd list apppool`。
 
 2.  字符串拆分
 
@@ -250,4 +254,3 @@ func getCurrentDir() string {
 }
 
 ```
-
